@@ -1,14 +1,15 @@
 <template>
   <v-app>
-    <v-main>
-      <HeaderBar/>
-      <SliderCarousel />
-    </v-main>
+    <HeaderBar/>
+    <RouterView></RouterView>
+    <v-footer>
+      <FooterBar />
+    </v-footer>
   </v-app>
 </template>
 
 <script setup>
 import HeaderBar from './components/HeaderBar.vue';
-import SliderCarousel from './components/SliderCarousel.vue';
-
+import FooterBar from './components/FooterBar.vue';
 </script>
+

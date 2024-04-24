@@ -6,10 +6,23 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items class="pr-6">
-        <v-btn variant="text" >Home</v-btn>
-        <v-btn variant="plain">Sobre Nós</v-btn>
-        <v-btn variant="plain">Contato</v-btn>
+        <v-btn variant="text">
+          <router-link to="/" class="link">Home</router-link>
+        </v-btn>
+        <v-btn variant="plain">
+          <router-link to="/about" class="link">Sobre Nós</router-link>
+        </v-btn>
+        <v-btn variant="plain">
+          <router-link to="/contact" class="link">Contato</router-link>
+        </v-btn>
       </v-toolbar-items>
 
     </v-toolbar>
 </template>
+<style>
+.link{
+  color: #BDBDBD;
+  text-decoration: none;
+  font-weight: 300;
+}
+</style>

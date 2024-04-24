@@ -6,7 +6,7 @@
         <template v-slot:next="{ props }">
             <v-btn color="red-darken-3" variant="tonal" icon="mdi-chevron-right" @click="props.onClick"></v-btn>
         </template>
-
+        
         <v-carousel-item v-for="slide in slides" :key="slide.index"
             :src="slide.src"
             cover
