@@ -24,7 +24,7 @@
                         <v-expand-transition>
                             <v-card v-if="reveal" class="position-absolute w-100" height="100%" style="bottom: 0;">
                                 <v-card-text class="pb-0">
-                                    <p class="text-h4 text-red-darken-2">Combos</p>
+                                    <p class="text-h4">Combos</p>
                                     <p class="text-medium-emphasis">Para melhorar a sua escolha, vai de COMBO!</p>
                                     <p class="my-5 text-h6 font-weight-regular">{{ item.combo }}</p>
                                 </v-card-text>
