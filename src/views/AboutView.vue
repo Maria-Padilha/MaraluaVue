@@ -1,14 +1,9 @@
 <template>
-    opa
+    <BannerAbout />
+    <AboutUs />
 </template>
 
-<style scoped>
-    .headline{
-        font-size: 30px;
-        color: white;
-        font-weight: 900
-    }
-    span{
-        color: #C62828;
-    }
-</style>
+<script setup>
+import BannerAbout from '@/components/AboutPage/BannerAbout.vue';
+import AboutUs from '@/components/AboutPage/AboutUs.vue';
+</script>

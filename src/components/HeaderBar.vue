@@ -6,15 +6,9 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items class="pr-6">
-        <v-btn variant="text">
-          <router-link to="/" class="link">Home</router-link>
-        </v-btn>
-        <v-btn variant="plain">
-          <router-link to="/about" class="link">Sobre Nós</router-link>
-        </v-btn>
-        <v-btn variant="plain">
-          <router-link to="/contact" class="link">Contato</router-link>
-        </v-btn>
+        <v-btn variant="text" to="/" class="link">Home</v-btn>
+        <v-btn variant="plain" to="/about" class="link">Sobre Nós</v-btn>
+        <v-btn variant="plain" to="/contact" class="link">Contato</v-btn>
       </v-toolbar-items>
 
     </v-toolbar>
