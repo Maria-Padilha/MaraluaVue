@@ -80,33 +80,11 @@ const items = ref([
     margin-bottom: 30px;
     padding-bottom: 30px;
 }
-
-.content {
-    width: 60%;
-    margin: 0 auto;
-}
-
-h2 {
-    font-weight: 300;
-}
-
 .description{
     font-size: 18px;
 }
 
 span {
     color: #C62828;
-}
-
-@media screen and (max-width: 1000px) {
-    .content {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .content {
-        width: 90%;
-    }
 }
 </style>

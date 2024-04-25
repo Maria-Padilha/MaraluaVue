@@ -78,24 +78,7 @@ const items = ref([
 </script> 
 
 <style scoped>
-    .content{
-        width: 60%;
-        margin: 30px auto 40px auto;
-    }
-    h2{
-        font-weight: 300;
-    }
     span{
         color: #C62828;
-    }
-    @media screen and (max-width: 1000px) {
-        .content{
-            width: 80%;
-        }
-    }
-    @media screen and (max-width: 800px) {
-        .content{
-            width: 90%;
-        }
     }
 </style>

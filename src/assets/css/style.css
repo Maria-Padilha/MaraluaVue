@@ -1,0 +1,22 @@
+.headline{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+h2 {
+    font-weight: 300;
+}
+.content{
+    width: 60%;
+    margin: 60px auto 40px auto;
+}
+@media screen and (max-width: 1000px) {
+    .content{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .content{
+        width: 90%;
+    }
+}

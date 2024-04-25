@@ -1,10 +1,10 @@
 <template>
     <v-carousel hide-delimiters :height="height" with cover>
         <template v-slot:prev="{ props }">
-            <v-btn color="red-darken-3" variant="tonal" icon="mdi-chevron-left" @click="props.onClick"></v-btn>
+            <v-btn density="comfortable" color="red-darken-3" variant="tonal" icon="mdi-chevron-left" @click="props.onClick"></v-btn>
         </template>
         <template v-slot:next="{ props }">
-            <v-btn color="red-darken-3" variant="tonal" icon="mdi-chevron-right" @click="props.onClick"></v-btn>
+            <v-btn density="comfortable" color="red-darken-3" variant="tonal" icon="mdi-chevron-right" @click="props.onClick"></v-btn>
         </template>
         
         <v-carousel-item v-for="slide in slides" :key="slide.index"
@@ -38,7 +38,7 @@ if(window.innerWidth <= 720){
     slides.value = [
     {
         index: 1,
-        src: "", 
+        src: require("../../assets/carousel/sliderMini.png"), 
         title: "Plataforma 360", 
         subtitle: "Algum texto bacana sobre a plataforma"
     },

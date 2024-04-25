@@ -4,6 +4,8 @@ import vuetify from './plugins/vuetify'
 import { loadFonts } from './plugins/webfontloader'
 import { createMemoryHistory, createRouter } from 'vue-router'
 
+import('./assets/css/style.css')
+
 import HomeView from './views/HomeView.vue'
 import AboutView from './views/AboutView.vue'
 import ContactView from './views/ContactView.vue'

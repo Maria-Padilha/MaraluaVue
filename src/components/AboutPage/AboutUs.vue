@@ -2,6 +2,14 @@
     <div class="container-about">
         <div class="about-info">
             <div class="about-info-video">
+                <v-layout class="absolute" style="height: 30px">
+                    <v-system-bar color="black">
+                        <v-icon class="ms-2" icon="mdi-wifi-strength-4"></v-icon>
+                        <v-icon class="ms-2" icon="mdi-signal-cellular-outline"></v-icon>
+                        <v-icon class="ms-2" icon="mdi-battery"></v-icon>
+                        <span class="ms-2">{{ hours }}:{{ minutes }}</span>
+                    </v-system-bar>
+                </v-layout>
                 <video :src="src" controls loop muted class="video"></video>
             </div>
             <div class="about-info-txt">
@@ -22,7 +30,10 @@
 
 <script setup>
 import { ref } from 'vue'
+
 const src = ref(require('../../assets/videoAbout.mp4'))
+const hours = new Date().getHours()
+const minutes = new Date().getMinutes();
 
 const items = ref([
     {
@@ -73,29 +84,27 @@ const items = ref([
 }
 .about-info-video{
     background-color: rgb(0, 0, 0);
-    width: 22rem;
+    width: 21rem;
     position: relative;
     top: .2rem;
     border-radius: 60px;
     height: 39rem;
     border: 2px solid rgba(163, 163, 163, 0.548);
 }
-.about-info-video::before{
-    content: "";
-    width: 93%;
-    height: 30px;
-    background-color: rgb(0, 0, 0);
+.absolute{
+    position: absolute;
     position: absolute;
     left: 50%;
-    top: 25px;
+    top: 37px;
     transform: translate(-50%);
     z-index: 1;
+    width: 93%;
 }
 .about-info-video::after{
     content: "";
     width: 50px;
     height: 4px;
-    background-color: rgba(255, 255, 255, 0.137);
+    background-color: rgba(255, 255, 255, 0.144);
     position: absolute;
     left: 50%;
     top: 27px;
@@ -104,7 +113,7 @@ const items = ref([
     border-radius: 5px;
 }
 .about-info-video video{
-    border-radius: 35px;
+    border-radius: 0 0 35px 35px;
     position: relative;
     top: 1.5rem;
     cursor: pointer;
@@ -147,6 +156,6 @@ const items = ref([
     text-transform: uppercase;
 }
 video{
-    width: 20rem;
+    width: 19rem;
 }
 </style>
